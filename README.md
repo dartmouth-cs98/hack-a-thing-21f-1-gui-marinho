@@ -10,7 +10,7 @@ Include some screenshots.
 
 ## Who Did What?
 
-TODO: who worked on what part?
+I, Gui, did everything :)
 
 ## What you learned
 
@@ -18,8 +18,10 @@ TODO: what worked / what didn't work
 
 ## Authors
 
-TODO: list of authors
+Gui Marinho '22'
 
 ## Acknowledgments
 
-TODO: cite any tutorials followed here
+Javascript tutorial I watched to get acquainted: https://www.youtube.com/watch?v=W6NZfCO5SIk
+
+Alexa Skill tutorial: https://developer.amazon.com/en-US/alexa/alexa-skills-kit/get-deeper/tutorials-code-samples/build-an-engaging-alexa-skill/module-3
