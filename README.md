@@ -7,7 +7,11 @@ I built a short Alexa Skill that can keep track of the user's birthday, tell the
 
 To accomplish this, I first watched a quick (1h) JavaScript tutorial, as I feel me learning the language is overdue. JavaScript is the primary means of writing Skills, with Python also available. Then, I followed a tutorial by Amazon on how to create your first Skill, Cake Time. I did some small improvements to its capabilities of recognizing less 'correct' speech patterns (missing out on saying the month/year/day, some common ways of introducing the sentence such as 'my birthday is' or 'it's').
 
-Include some screenshots.
+Demo on annexed videos (sorry! couldn't find a way to add to Markdown)
+
+First video: named First Part
+
+Second video: named Second Part
 
 ## Who Did What?
 
@@ -22,12 +26,20 @@ The meat of the project, however, was the Skill itself. Amazon Skills, turns out
 **Back end:** 
 
 * **Handlers** handle spoken commands from user, and speak back to user or prompt them for a new command.
+
 * **Interceptors** take over command from a handler if we already have a piece of information saved; kind of an if statement function.
+
+  ![](C:\Users\Gui Marinho\Desktop\dumdum\hack-a-thing-21f-1-gui-marinho\code.png)
 
 **Front end:**
 
 * **Invocation** is the process to call on your Skill to open. Mine simply opens when one says "Alexa, open Gui's BirthdayBot."
+
+  ![](C:\Users\Gui Marinho\Desktop\dumdum\hack-a-thing-21f-1-gui-marinho\calls.png)
+
 * **Intents** are the possible answers a user can give; all possible formats should be covered for how the user may answer, and one must also specify which handler should be called by the intent.
+
+  ![](C:\Users\Gui Marinho\Desktop\dumdum\hack-a-thing-21f-1-gui-marinho\intent.png)
 
 Now, of course, not everything is a rose garden. Alexa has some big limitations; the one that bothered me the most had to do with intents. An intent requires you providing it with all possible answers by users; when it comes to "when is your birthday?", answers with one or all of the components "month day year" **in this order** work fine. As a non-American, I quickly learned this system was already in need of improvement, as "day month year" did not work. One can easily think of answers that would be quite complicated to untangle, such as "next Tuesday" or "in two months" or "today". And all of this just to get one date! I can imagine how hard it would be to interpret more complicated patterns, with more boxes or more possibilities. I tried working on adding more possible answer types, but due to time and to my noob-ness in JavaScript it is taking some time.
 
